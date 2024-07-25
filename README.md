@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# QuickLink
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React application providing URL shortening services using multiple providers: Spoo.me, Shortiny, Short.io, and TinyURL. This app allows users to generate shortened URLs, manage them, and customize certain features like alias and click limits.
 
-## Available Scripts
+[Live Demo](https://quicklink-urlshortener.netlify.app/)
 
-In the project directory, you can run:
+## Features
+* Multiple URL Shortening Providers: Choose from Spoo.me, Shortiny, Short.io, and TinyURL to shorten your URLs.
+* Responsive Design: Fully responsive design for both desktop and mobile devices.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To run this project locally, you'll need to have:
 
-### `npm test`
+    Node.js (v14 or later)
+    npm or yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+**Step 1: Clone the Repository:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+git clone https://github.com/sharjeel-193/url-shortener.git
+cd url-shortener-service
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
 
-### `npm run eject`
+**Step 2: Install Dependencies:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Using npm:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Or using yarn:
+```bash
+yarn install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Step 3: Environment Variables:**
 
-## Learn More
+Create a .env file in the root directory and add your API keys for the services used:
+```bash
+    REACT_APP_TINYURL_KEY=your_tinyurl_api_key
+    REACT_APP_SHORTINY_KEY=your_shortiny_api_key
+```
+Obtain your API keys from the respective services:
+* TinyURL
+* Shortiny
+* Short.io
+* Spoo.me
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Step 4: Running the App**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To start the development server, run:
 
-### Code Splitting
+```bash
+npm start
+```
+or
+```bash
+yarn start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Visit http://localhost:3000 in your browser to see the app in action.
 
-### Analyzing the Bundle Size
+**Step 5: Deployment**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is deployed using Netlify. For this you have to follow the following steps: 
+* Set Up Your Netlify Account and link it to your GitHub repository.
+* Deploy the Project through the Netlify dashboard, configuring the environment variables as described above.
+You can access the currently deployed version at the following url:
+```bash
+https://quicklink-urlshortener.netlify.app/
+```
 
-### Making a Progressive Web App
+### Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* Enter the URL you wish to shorten.
+* Select the Domain from the dropdown menu (Spoo.me, Shortiny, Short.io, TinyURL).
+* Click 'Generate Link' to create the shortened URL.
+* Copy the Shortened URL using the provided icon button.
 
-### Advanced Configuration
+### Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* **React**: Frontend library for building user interfaces.
+* **MUI**: Component library for implementing Material Design in React.
+* **Netlify**: Hosting and deployment platform.
 
-### Deployment
+License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is licensed under the MIT License - see the LICENSE file for details
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For any inquiries or issues, please contact m.sharjeel193@gmail.com
